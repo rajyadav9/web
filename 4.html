@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<body>
+	<script>
+		var input=prompt("enter input");
+		if(!isNaN(input))
+		{
+			var rem,rev=0,num;
+			num=parseInt(input);
+			while(num!=0)
+			{
+				rem=num%10;
+				rev=rev*10+rem;
+
+				num=parseInt(num/10);
+			}
+			alert("the reverse of no is"+rev);
+		}
+		else
+		{
+			var i,chr;
+			input=input.toUpperCase();
+			for( i=0;i<input.length;i++)
+			{
+				
+				chr=input.charAt(i);
+				if(chr=='A'||chr=='E'||chr=='I'||chr=='O'||chr=='U')
+					break;
+
+			}
+			if(i<input.length)
+			{
+				alert("position of vowel is"+(i+1));
+			}
+			else{
+				alert("no vowel oresent");
+			}
+		}
+	</script>
+</body>
+</html>

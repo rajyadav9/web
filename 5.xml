@@ -1,0 +1,32 @@
+<?xml-stylesheet type="text/css" href="5.css"?>
+<html>
+<body>
+	<center><h1>student description</h1></center>
+</body>
+<students>
+	<student>
+		<usn>usn:1rn15cs087</usn>
+		<name>name:richa</name>
+		<college>college:rnit</college>
+		<branch>branch:cse</branch>
+		<year>year:2015</year>
+		<email>email:richa@gamial.com</email>
+	</student>
+	<student>
+		<usn>usn:1rn15cs087</usn>
+		<name>name:richa</name>
+		<college>college:rnit</college>
+		<branch>branch:cse</branch>
+		<year>year:2015</year>
+		<email>email:richa@gamial.com</email>
+	</student>
+	<student>
+		<usn>usn:1rn15cs087</usn>
+		<name>name:richa</name>
+		<college>college:rnit</college>
+		<branch>branch:cse</branch>
+		<year>year:2015</year>
+		<email>email:richa@gamial.com</email>
+	</student>
+</students>
+</html>

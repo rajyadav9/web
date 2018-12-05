@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>text shrinking </title>
+		<style>
+			p{
+				position:absolute;
+				left:50%;
+				top:50%;
+				transform:translate(-50%,-50%);
+			}
+		</style>
+		
+	</head>
+	<body>
+		<p id="demo"></p>
+	<script>
+			
+			var ids=document.getElementById("demo");
+			var var1=setInterval(inTimer,1000);
+			var fs=5;
+			function inTimer()
+			{
+
+				ids.innerHTML="text growing";
+				ids.setAttribute('style',"font-size:"+fs+"px;color:red");
+				fs+=5;
+				if(fs>=50)
+				{
+					clearInterval(var1);
+					var var2=setInterval(deTimer,1000);
+				}
+			}
+			function deTimer()
+			{
+				ids.setAttribute('style',"font-size:"+fs+"px;color:blue");
+				ids.innerHTML="shriking";
+				fs-=5;
+				if(fs==0)
+				{
+					clearInterval(var2);
+					
+				}
+			}
+		</script>
+	</body>
+</html>
